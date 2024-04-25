@@ -34,3 +34,7 @@ Events:
 ```
 kubectl create secret generic kbot --from-literal=token="YOUR_TELE_TOKEN"
 ```
+
+```
+kubectl get secret kbot -o jsonpath="{.data.token}" | base64 -d
+```
