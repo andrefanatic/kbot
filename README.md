@@ -7,11 +7,15 @@ In addition to the Helm chart, I've prepared a GitHub release containing the cha
 
 To begin, download the Helm chart package from the GitHub release page and use it to install the application on your k8s cluster. You can also refer to the release notes for details on new features, bug fixes, and other changes included in this release.
 
-**Instruction**
+# Instruction
 
-```k config set-context --current --namespace=default```
+```
+kubectl config set-context --current --namespace=default
+```
 
-```helm install kbot https://github.com/andrefanatic/kbot/releases/download/v1.0.1/kbot-0.1.0.tgz```
+```
+helm install kbot https://github.com/andrefanatic/kbot/releases/download/v1.0.1/kbot-0.1.0.tgz
+```
 
 ```
 kubectl get po                                                                                               
@@ -27,4 +31,6 @@ Events:
   Warning  Failed     10s (x6 over 67s)  kubelet            Error: couldn't find key token in Secret default/kbot
 ```
 
-```kubectl create secret generic kbot --from-literal=token="YOUR_TELE_TOKEN"```
+```
+kubectl create secret generic kbot --from-literal=token="YOUR_TELE_TOKEN"
+```
