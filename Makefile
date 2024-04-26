@@ -38,7 +38,7 @@ arm: format get
 	docker build --build-arg name=arm -t ${REGISTRY}/${APP}:${VERSION}-${TARGETOS}-arm .
 
 image:
-	docker build . -t ${REGISTRY}/${APP}:${VERSION}-${TARGETOS}-${TARGETARCH}
+	docker build . -t ${REGISTRY}/${APP}:${VERSION}-${TARGETOS}-${TARGETARCH} --build-arg TARGETARCH=${TARGETARCH}
 
 push:
 	docker push ${REGISTRY}/${APP}:${VERSION}-${TARGETOS}-${TARGETARCH}
