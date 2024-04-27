@@ -5,7 +5,7 @@
 replicaCount: 1
 image:
   repository: "andriy1fanatic"
-  tag: "-"
+  tag: "v1.0.2-3126d5a"
   arch: "amd64"
 secret:
   name: "kbot"
