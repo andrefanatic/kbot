@@ -7,6 +7,8 @@ In addition to the Helm chart, I've prepared a GitHub release containing the cha
 
 To begin, download the Helm chart package from the GitHub release page and use it to install the application on your k8s cluster.  
 
+# Workflow illustration
+
 # Instruction
 
 ```
