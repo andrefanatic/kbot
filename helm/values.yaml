@@ -5,7 +5,7 @@
 replicaCount: 1
 image:
   registry: "ghcr.io"
-  repository: "andriy1fanatic"
+  repository: "andrefanatic/kbot"
   tag: "v1.1.2-d0fbaf5"
   os: ""
   arch: ""
