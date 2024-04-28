@@ -51,7 +51,7 @@ jobs:
     - name: Update helm/values.yaml
       uses: mikefarah/yq@master
       with: 
-        cmd: yq -i '.image.tag=strenv(VERSION)' helm/values.yaml
+        cmd: yq -i '.image.tag=strenv(VERSION) | .image.os=strenv(TARGETOS) | .image.arch=strenv(TARGETARCH)' helm/values.yaml
       
     - name: Commit helm/values.yaml update
       run: |
