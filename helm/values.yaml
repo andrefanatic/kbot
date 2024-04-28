@@ -6,7 +6,7 @@ replicaCount: 1
 image:
   registry: "ghcr.io"
   repository: "andrefanatic/kbot"
-  tag: "v1.1.2-61df23d"
+  tag: "v1.1.2-dd1e53c"
   os: "linux"
   arch: "amd64"
 secret:
